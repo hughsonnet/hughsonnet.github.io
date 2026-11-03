@@ -1,3 +1,12 @@
+---
+title: Windows 11 SMB 共享认证错误的解决方法
+pubDatetime: 2026-11-03T00:00:00+08:00
+description: 通过检查和修改 ForceGuest 注册表设置，解决 Windows 11 SMB 共享用户名或密码无效的问题。
+tags:
+  - Windows
+  - SMB
+---
+
 # Windows 11 SMB 共享提示用户名或密码错误的解决方法
 
 ## 问题描述
