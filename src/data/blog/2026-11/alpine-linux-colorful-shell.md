@@ -40,6 +40,12 @@ esac
 EOF_SHELL
 ```
 
+**一行搞定**（与上面的配置等效，二选一即可）：
+
+```sh
+printf '%s\n' 'case $- in' '  *i*)' "    PS1='\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ '" "    alias ls='ls --color=auto -F'" "    alias ll='ls -lh --color=auto -F'" "    alias la='ls -la --color=auto -F'" '    ;;' 'esac' > /etc/profile.d/color-shell.sh
+```
+
 重新登录 SSH 即可生效；当前会话可运行：
 
 ```sh
